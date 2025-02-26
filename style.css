@@ -1,0 +1,70 @@
+/* mais sobre view port */
+/* https://www.alura.com.br/artigos/guia-de-unidades-no-css */
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing */
+
+/* guia flex-box */
+/* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh; /* Altura dentro do body - Ele vai oculpar 100 em altura almentando o diametro (Quando vai se usar centralização precisa ser usado a altura toda) */
+    background-color: #000; /* Fundo preto */
+    color: #fff; /* Todo resto escrito em branco */
+    box-sizing: border-box; /* Essa função coloca a caixa de dentro sincronizada com a de fora, assim ele não sai da margem (Obedece o que dentro da caixa)*/
+}
+.titulo-destaque{
+    color: #22D4FD;
+}
+
+/*Caixa principal main*/
+.container{
+    display: flex; /* Flexionar o texto na horizontal*/
+    align-items: center; /*alinhamento no centro vertical (usa a maior caixa para se basear no alinhamento) */
+    justify-content: space-between; /*Espaço entre os itens */
+    gap: 0.5rem; /* Espaço entre itens */
+    margin: 10%; /* Margem de 10% do tamanho da tela que você tem */
+}
+
+.container__conteudo{
+    width: 650px; /*Largura total do contener (Textos)*/
+}
+
+.container__conteudo__titulo{
+    font-size: 36px;
+    font-family: 'Korana One', sans-serif;
+    font-weight: 400; 
+    word-spacing: 6px; /* Espaço das palavras */
+    letter-spacing: 2.5px; /* Espaçamento entre letras*/
+    margin-bottom: 40px; /* Sinaliza que abaixo do titulo até o sub titulo tem um espaço de 40px*/
+}
+.container__conteudo__texto{
+    font-size: 50px;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+.container__links{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 51PX; /* Sinaliza que acima do bottão até o sub titulo tem um espaço de 51px*/
+}
+
+.container__links__link{
+    background-color: #22D4FD;
+    color: #000; /* COr da fonte */
+    width: 250px; /* Largura do botão */
+    padding: 16px; /* Espaçamento interno do botão */
+    text-align: center; /* Alinhamento de texto ao centro */
+    font-size: 24px; /* Tamanho da fonte*/
+    font-weight: 600; /* Semi bolt (Fonte em negrito)*/
+    text-decoration: none; /* Tirar sublinhado do link, linha abaixo do texto*/
+    font-family: 'Montserrat', sans-serif; /* Fonte exportada pelo link gerado na expertação no google fonte*/
+    border-radius: 16px; /* Arendodamento dos cantos de todos os lados*/
+}
+
+    
